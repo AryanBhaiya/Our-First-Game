@@ -10,11 +10,13 @@ public class PlatfromSpawner : MonoBehaviour
     Vector3 lasPos;
     Vector3 newPos;
 
+    public bool stop;
+
     // Start is called before the first frame update
     void Start()
     {
         lasPos = lastPlatform.position;
-        GenratePos();
+        StartCoroutine(SpawnPlatforms());
     }//start
 
     // Update is called once per frame
@@ -26,7 +28,24 @@ public class PlatfromSpawner : MonoBehaviour
     void GenratePos()
     {
         newPos = lasPos;
-        newPos.z += 2f;
-        Instantiate(platform, newPos, Quaternion.identity);
+        int rand = Random.Range(0, 2);
+        if (rand > 0)
+        {
+            newPos.x += 2f;
+        }
+        else
+        {
+            newPos.z += 2f;
+        }
     }
+        IEnumerator SpawnPlatforms()
+        {
+            while (!stop)
+            {
+                GenratePos();
+                Instantiate(platform, newPos, Quaternion.identity);
+                lasPos = newPos;
+                yield return new WaitForSeconds(0.2f);
+            }
+        }
 }

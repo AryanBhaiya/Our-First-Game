@@ -6,12 +6,15 @@ public class CarController : MonoBehaviour
 {
     public float moveSpeed;
 
-    bool faceLeft, dirstTab;
+    bool faceLeft, firstTab;
 
+<<<<<<< Updated upstream
     // Start is called before the first frame update
     void Start()
     {
     }
+=======
+>>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()

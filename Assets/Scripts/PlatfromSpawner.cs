@@ -19,11 +19,6 @@ public class PlatfromSpawner : MonoBehaviour
         StartCoroutine(SpawnPlatforms());
     }//start
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }//update
 
     void GenratePos()
     {

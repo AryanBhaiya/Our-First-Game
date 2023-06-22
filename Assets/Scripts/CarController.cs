@@ -8,22 +8,47 @@ public class CarController : MonoBehaviour
 
     bool faceLeft, firstTab;
 
-<<<<<<< Updated upstream
     // Start is called before the first frame update
     void Start()
     {
     }
-=======
->>>>>>> Stashed changes
+
+
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        CheckInput();
     }
 
     void Move()
     {
         transform.position += transform.forward * moveSpeed * Time.deltaTime;
     }
+
+    void CheckInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ChangeDir();
+        }
+    }
+
+    void ChangeDir()
+    {
+        if (faceLeft)
+        {
+            faceLeft = false;
+            transform.rotation = Quaternion.Euler(0, 90, 0);
+        }
+        else
+        {
+            faceLeft = true;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+    }
+
+
 }

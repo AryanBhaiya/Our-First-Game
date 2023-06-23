@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(UpdateScore));
+        StartCoroutine(UpdateScore());
+
     }
 
     // Update is called once per frame
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         while(countScore)
         {
-            yield return new WaitForSeconds(if);
+            yield return new WaitForSeconds(1f);
             score++;
             scoreText.text = score.ToString();
         }

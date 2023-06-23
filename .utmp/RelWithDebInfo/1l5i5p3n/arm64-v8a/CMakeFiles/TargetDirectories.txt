@@ -1,0 +1,5 @@
+X:/PC/Desktop X/DEV/github unity/Our-First-Game/.utmp/RelWithDebInfo/1l5i5p3n/arm64-v8a/CMakeFiles/edit_cache.dir
+X:/PC/Desktop X/DEV/github unity/Our-First-Game/.utmp/RelWithDebInfo/1l5i5p3n/arm64-v8a/CMakeFiles/rebuild_cache.dir
+X:/PC/Desktop X/DEV/github unity/Our-First-Game/.utmp/RelWithDebInfo/1l5i5p3n/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+X:/PC/Desktop X/DEV/github unity/Our-First-Game/.utmp/RelWithDebInfo/1l5i5p3n/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+X:/PC/Desktop X/DEV/github unity/Our-First-Game/.utmp/RelWithDebInfo/1l5i5p3n/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -105,18 +105,40 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Artboard 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1125
+        height: 2436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d085a16ce8160ad42a66f6d4c0ca7ff0
+      internalID: -1599160567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 49bc820c0ddc2c843a86eaf5379ac065
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Artboard 1_0: -1599160567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

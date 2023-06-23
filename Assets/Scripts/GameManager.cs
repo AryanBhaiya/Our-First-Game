@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public Text bestText;
     public Text diamondText;
-    public Text startText;
+    public Text starText;
 
     int score = 0;
     int bestScore, totalDiamond, totalStar;
@@ -33,8 +33,15 @@ public class GameManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   //total rupees
+        totalDiamond = PlayerPrefs.GetInt("totalDiamond");
+        diamondText.text = totalDiamond.ToString();
+        //total coins
+        totalStar = PlayerPrefs.GetInt("totalStar");
+        starText.text = totalStar.ToString();
+        //bestscore
         bestScore = PlayerPrefs.GetInt("bestScore");
+        bestText.text = bestScore.ToString();
     }
 
     // Update is called once per frame
@@ -61,6 +68,11 @@ public class GameManager : MonoBehaviour
     {
         countScore = false;
         platformSpawner.SetActive(false);
+
+        if (score > bestScore)
+        {
+            PlayerPrefs.SetInt("bestScore", score);
+        }
     }
 
     IEnumerator UpdateScore()
@@ -69,7 +81,14 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             score++;
-            scoreText.text = score.ToString();
+            if (score > bestScore)
+            {
+                bestText.text = score.ToString();
+            }
+                
+                scoreText.text = score.ToString();
+            
+            
         }
         
     }

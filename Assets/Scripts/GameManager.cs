@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        bestScore = PlayerPrefs.GetInt("bestScore");
     }
 
     // Update is called once per frame
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        countScore = false;
         platformSpawner.SetActive(false);
     }
 

@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+
     public float moveSpeed;
     bool faceLeft, firstTab;
 
     // Update is called once per frame
     void Update()
     {
-        Move();
-        CheckInput();
+
+        if (GameManager.instance.isGameStarted)
+        {
+            Move();
+            CheckInput();
+        }
+        if (transform.position.y <= -2)
+        {
+            GameManager.instance.GameOver();
+        }
     }
 
     void Move()

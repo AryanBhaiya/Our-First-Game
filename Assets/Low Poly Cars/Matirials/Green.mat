@@ -76,3 +76,18 @@ Material:
     - _Color: {r: 0.23589224, g: 0.6981132, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
+fileFormatVersion: 2
+guid: fb2ab18a8d946034fa188ace09bfe055
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 150318
+  packageName: Stylized Vehicles Pack - FREE
+  packageVersion: 1.0
+  assetPath: Assets/Stylized Vehicles Pack Free/Materials/SpecialLight2.mat
+  uploadId: 328894

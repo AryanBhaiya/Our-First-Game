@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,16 @@ public class GameManager : MonoBehaviour
     public bool isGameStarted;
 
     public GameObject platformSpawner;
+
+    [Header("Score")]
+    public Text scoreText;
+    public Text bestText;
+    public Text diamondText;
+    public Text startText;
+
+    int score = 0;
+    int bestScore, totalDiamond, totalStar;
+    bool countScore;
 
 
     private void Awake()
@@ -23,7 +34,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(UpdateScore));
     }
 
     // Update is called once per frame
@@ -47,6 +58,17 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         platformSpawner.SetActive(false);
+    }
+
+    IEnumerator UpdateScore()
+    {
+        while(countScore)
+        {
+            yield return new WaitForSeconds(if);
+            score++;
+            scoreText.text = score.ToString();
+        }
+        
     }
 }
 

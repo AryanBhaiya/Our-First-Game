@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject platformSpawner;
 
+    [Header("GameOver")]
+    public GameObject GameOverPanel;
+    public Text lastScoreText;
+
     [Header("Score")]
     public Text scoreText;
     public Text bestText;
@@ -66,6 +70,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        GameOverPanel.SetActive(true);
+        lastScoreText.text = score.ToString();
         countScore = false;
         platformSpawner.SetActive(false);
 

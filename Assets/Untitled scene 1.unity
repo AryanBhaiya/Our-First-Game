@@ -1292,10 +1292,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGameStarted: 0
   platformSpawner: {fileID: 212320970}
+  GameOverPanel: {fileID: 667027648}
+  lastScoreText: {fileID: 1667121068}
   scoreText: {fileID: 1274946985}
   bestText: {fileID: 1824492069}
   diamondText: {fileID: 1314985764}
-  starText: {fileID: 0}
+  starText: {fileID: 1768323162}
 --- !u!4 &741134653
 Transform:
   m_ObjectHideFlags: 0
@@ -2504,7 +2506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63, y: 244}
+  m_AnchoredPosition: {x: -63, y: 216}
   m_SizeDelta: {x: 498.5314, y: 103.4985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607258334
@@ -2584,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -6}
+  m_AnchoredPosition: {x: 44, y: -4}
   m_SizeDelta: {x: 154.682, y: 87.0424}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667121068
@@ -2620,7 +2622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10000
+  m_Text: 0
 --- !u!222 &1667121069
 CanvasRenderer:
   m_ObjectHideFlags: 0

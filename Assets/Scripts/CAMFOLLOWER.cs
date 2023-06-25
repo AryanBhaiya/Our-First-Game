@@ -10,7 +10,7 @@ public class CAMFOLLOWER : MonoBehaviour
 
     public float followSpeed;
 
-    [SerializeField] [Range(0f, 1f)] float lerpSpeed;
+    [SerializeField] [Range(0f, 1f)] float 1erpSpeed;
     [SerializeField] Color[] myColors;
     int colorIndex = 0;
     float change = 0f;
@@ -31,6 +31,15 @@ public class CAMFOLLOWER : MonoBehaviour
         if (target.position.y >= 0)
         {
             Follow();
+        }
+
+        Camera.main.backgroundColor = colorIndex.Lerp(Camera.main.backgroundColor, myColors[colorIndex], 1erpTime * Time.deltaTime);
+        change = Mathf.Lerp(change, 1f, 1erpTime * Time.deltaTime);
+        if (change>0.9f)
+        {
+            change = 0f;
+            colorIndex++;
+            colorIndex = (colorIndex >= len) ? 0 : colorIndex;
         }
     }
     

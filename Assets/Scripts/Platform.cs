@@ -4,10 +4,26 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
+
+    public GameObject platformblast;
+
+    public GameObject diamond, star;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        int randNumber = Random.Range(1, 21);
+        Vector3 tempPos = transform.position;
+        tempPos.y += 1.2f;
+        if (randNumber<4)
+        {
+            Instantiate(star, tempPos, star.transform.rotation);
+        }
+        if (randNumber == 7)
+        {
+            Instantiate(diamond, tempPos, diamond.transform.rotation);
+        }
+
     }//start
 
 
@@ -21,6 +37,7 @@ public class Platform : MonoBehaviour
 
     void FallDown()
     {
+        Instantiate(platformblast, transform.position, Quaternion.identity);
         GetComponent<Rigidbody>().isKinematic = false;
         Destroy(gameObject, 0.5f);
     }

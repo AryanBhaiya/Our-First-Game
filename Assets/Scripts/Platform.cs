@@ -8,11 +8,21 @@ public class Platform : MonoBehaviour
     void Start()
     {
         
-    }
+    }//start
 
-    // Update is called once per frame
-    void Update()
+
+    void OnCollisionExit(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            Invoke("FallDown", 0.5f);
+        }
+    }//oncollisionExit
+
+    void FallDown()
+    {
+        GetComponent<Rigidbody>().isKinematic = false;
+        Destroy(gameObject, 0.5f);
     }
+    
 }

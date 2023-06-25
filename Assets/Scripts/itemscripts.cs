@@ -19,10 +19,12 @@ public class itemscripts : MonoBehaviour
         {
             if (gameObject.tag == "star")
             {
+                GameManager.instance.GetStar();
                 Instantiate(starblast, transform.position, Quaternion.identity);
             }
             if (gameObject.tag == "diamond")
             {
+                GameManager.instance.GetDiamond();
                 Instantiate(diamondblast, transform.position, Quaternion.identity);
             }
             Destroy(gameObject);

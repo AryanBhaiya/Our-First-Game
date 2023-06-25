@@ -10,10 +10,19 @@ public class CAMFOLLOWER : MonoBehaviour
 
     public float followSpeed;
 
+    [SerializeField] [Range(0f, 1f)] float lerpSpeed;
+    [SerializeField] Color[] myColors;
+    int colorIndex = 0;
+    float change = 0f;
+    int len;
+    
+    
+
     // Start is called before the first frame update
     void Start()
     {
         distance = target.position - transform.position;
+        len = myColors.Length;
     }//start
 
     // Update is called once per frame

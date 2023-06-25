@@ -104,5 +104,20 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("level");
     }
+
+    public void GetStar()
+    {
+        int newStar = totalStar++;
+        PlayerPrefs.SetInt("totalStar", newStar);
+        starText.text = totalStar.ToString();
+    }
+
+    public void GetDiamond()
+    {
+        int newDiamond= totalDiamond++;
+        PlayerPrefs.SetInt("totalDiamond", newDiamond);
+        diamondText.text =  totalDiamond.ToString();
+    }
+
 }
 

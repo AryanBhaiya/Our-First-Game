@@ -2,21 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CAMFOLLOWER : MonoBehaviour
+public class camerascript : MonoBehaviour
 {
 
     public Transform target;
     Vector3 distance;
-
     public float followSpeed;
 
-    [SerializeField] [Range(0f, 1f)] float 1erpSpeed;
+    [SerializeField][Range(0f, 1f)] float lerpTime;
     [SerializeField] Color[] myColors;
     int colorIndex = 0;
     float change = 0f;
     int len;
-    
-    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,16 +32,17 @@ public class CAMFOLLOWER : MonoBehaviour
             Follow();
         }
 
-        Camera.main.backgroundColor = colorIndex.Lerp(Camera.main.backgroundColor, myColors[colorIndex], 1erpTime * Time.deltaTime);
-        change = Mathf.Lerp(change, 1f, 1erpTime * Time.deltaTime);
-        if (change>0.9f)
+
+        Camera.main.backgroundColor = Color.Lerp(Camera.main.backgroundColor, myColors[colorIndex], lerpTime * Time.deltaTime);
+        change = Mathf.Lerp(change, 1f, lerpTime * Time.deltaTime);
+        if (change > 0.9f)
         {
             change = 0f;
             colorIndex++;
             colorIndex = (colorIndex >= len) ? 0 : colorIndex;
         }
     }
-    
+
     void Follow()
     {
         Vector3 currentPos = transform.position;

@@ -334,11 +334,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
---- !u!4 &166893087 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
-  m_PrefabInstance: {fileID: 166893082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193629082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,14 +533,13 @@ GameObject:
   - component: {fileID: 237329324}
   - component: {fileID: 237329323}
   - component: {fileID: 237329322}
-  - component: {fileID: 237329325}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &237329322
 AudioListener:
   m_ObjectHideFlags: 0
@@ -620,27 +614,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &237329325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237329321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3851af01d9c7e04fbdfc2191b86a314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 166893087}
-  followSpeed: 5
-  lerpSpeed: 0.098
-  myColors:
-  - {r: 1, g: 0.9371229, b: 0, a: 0}
-  - {r: 1, g: 0.51344156, b: 0, a: 0}
-  - {r: 0.1154933, g: 0, b: 1, a: 0}
-  - {r: 0, g: 1, b: 0.29543853, a: 0}
-  - {r: 1, g: 0, b: 0.85180044, a: 0}
 --- !u!1 &288689430
 GameObject:
   m_ObjectHideFlags: 0

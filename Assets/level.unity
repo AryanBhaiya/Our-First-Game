@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc7eef57eeb65549961915a0081a343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 9
 --- !u!4 &166893087 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 166893087}
-  followSpeed: 5
+  followSpeed: 9
   lerpTime: 0.275
   myColors:
   - {r: 0, g: 1, b: 0.29543853, a: 0}

@@ -23,5 +23,6 @@ public class caranimation : MonoBehaviour
     private void OnDisable( )
     {
         transform.position = initialPosition;
+        transform.rotation = Quaternion.Euler(0f,0f,0f);
     }
 }

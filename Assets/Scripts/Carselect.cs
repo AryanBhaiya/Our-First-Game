@@ -112,6 +112,17 @@ public class carholder : MonoBehaviour
 
     public void buystars()
     {
+        haveDiamonds += -1;
+        haveStars += -10;
+        PlayerPrefs.SetInt("totalStar", haveStars);
+        PlayerPrefs.SetInt("totalDiamond", haveDiamonds);
+        SetText();
+    }
 
+    public void EarnStar()
+    {
+        haveStars = PlayerPrefs.GetInt("totalStar");
+        haveStars += 100;
+        PlayerPrefs.SetInnt("totalStar", haveStars);
     }
 }

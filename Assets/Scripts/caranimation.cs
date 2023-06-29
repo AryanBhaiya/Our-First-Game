@@ -17,12 +17,12 @@ public class caranimation : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, finalPosition, 0.2f);
-        transform.Rotate(new Vector3(0f, 20f, 0) * Time.deltaTime);
+        transform.Rotate(new Vector3(0f, 10f, 0) * Time.deltaTime);
     }
 
     private void OnDisable( )
     {
         transform.position = initialPosition;
-        transform.rotation = Quaternion.Euler(0f,0f,0f);
+        transform.rotation = Quaternion.Euler(0f,90f,0f);
     }
 }

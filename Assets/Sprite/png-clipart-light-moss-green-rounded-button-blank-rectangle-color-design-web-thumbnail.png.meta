@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b08fc66ed7dd9ee449e6d7231cc2c28f
+guid: 151e0a3ff5f47034fafe9faca2dc9c38
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,22 +107,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: images_0
+      name: png-clipart-light-moss-green-rounded-button-blank-rectangle-color-design-web-thumbnail_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 318
-        height: 159
+        x: 38
+        y: 38
+        width: 267
+        height: 99
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 40, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afa8a66eeeba254da488995155d72a3
-      internalID: -928701288
+      spriteID: ed49a093fbd2b5042a88c7e5c0563624
+      internalID: 151386455
       vertices: []
       indices: 
       edges: []
@@ -130,7 +130,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 26cf8a5130732914ca04890e1df4a8a4
+    spriteID: 5505534fe91923843b03be4d3b55e43d
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +138,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      images_0: -928701288
+      png-clipart-light-moss-green-rounded-button-blank-rectangle-color-design-web-thumbnail_0: 151386455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

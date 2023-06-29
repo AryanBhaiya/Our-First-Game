@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b08fc66ed7dd9ee449e6d7231cc2c28f
+guid: 7574c06057f066942994396fc46e8e3a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,22 +107,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: images_0
+      name: pngtree-glitch-distorted-letter-x-broken-pixel-effect-png-image_2936132._0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 74
+        width: 258
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 56, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d824e7a72183f2438234a7fc6934234
+      internalID: -1418955048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-glitch-distorted-letter-x-broken-pixel-effect-png-image_2936132._1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 318
-        height: 159
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afa8a66eeeba254da488995155d72a3
-      internalID: -928701288
+      spriteID: a254b68a25e50e9459d63fe22052764a
+      internalID: 1054488675
       vertices: []
       indices: 
       edges: []
@@ -130,7 +151,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 26cf8a5130732914ca04890e1df4a8a4
+    spriteID: cdcffb2e6f6057e46aed9226ca619cfc
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +159,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      images_0: -928701288
+      pngtree-glitch-distorted-letter-x-broken-pixel-effect-png-image_2936132._0: -1418955048
+      pngtree-glitch-distorted-letter-x-broken-pixel-effect-png-image_2936132._1: 1054488675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

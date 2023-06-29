@@ -94,7 +94,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b9efbddb78fdb5844b3f8deb0fa6b323, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -997,7 +997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.9984, y: 2.5532}
+  m_AnchoredPosition: {x: -122, y: 0.0000019073}
   m_SizeDelta: {x: 256.7338, y: 272.4055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602414015
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32c56c42212ebb543a94d18dc546c883, type: 3}
+  m_Sprite: {fileID: -1501677154, guid: e07136eafd45e8a458f7d784c50dd35b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1332,7 +1332,7 @@ RectTransform:
   m_GameObject: {fileID: 822325134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1314985763}
@@ -1340,7 +1340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.8963, y: 4.2258}
+  m_AnchoredPosition: {x: -122.9, y: 0.000039101}
   m_SizeDelta: {x: 207.1797, y: 168.4836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &822325136
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ff8e768c2601482459b7b3f0dd06335a, type: 3}
+  m_Sprite: {fileID: 664180384, guid: 9acf159438fbdc84c8e79785234cba1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

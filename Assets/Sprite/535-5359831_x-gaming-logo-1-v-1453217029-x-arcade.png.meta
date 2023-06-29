@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b08fc66ed7dd9ee449e6d7231cc2c28f
+guid: 906da3c08c2608149b5d59263db2562e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: images_0
+      name: 535-5359831_x-gaming-logo-1-v-1453217029-x-arcade_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 318
-        height: 159
+        width: 386
+        height: 401
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,8 +121,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afa8a66eeeba254da488995155d72a3
-      internalID: -928701288
+      spriteID: cf2503ea7d0304a41af2f9a073243dbf
+      internalID: 515298129
       vertices: []
       indices: 
       edges: []
@@ -130,7 +130,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 26cf8a5130732914ca04890e1df4a8a4
+    spriteID: 4b61378e7cc54474499feb4a7e890616
     internalID: 0
     vertices: []
     indices: 
@@ -138,7 +138,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      images_0: -928701288
+      535-5359831_x-gaming-logo-1-v-1453217029-x-arcade_0: 515298129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

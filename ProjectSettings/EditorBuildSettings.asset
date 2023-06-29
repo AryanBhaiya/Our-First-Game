@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/level.unity
     guid: 038cc1186dd7a9b42a86daca691e796a
+  - enabled: 1
+    path: Assets/scenes/car selector x home.unity
+    guid: 33a77afeff46a9449ad1272047440ae2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

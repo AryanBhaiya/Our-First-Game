@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 289735553}
   - component: {fileID: 289735552}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: ad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,7 +479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185, y: -405.6}
+  m_AnchoredPosition: {x: 184.3, y: -405.6}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289735552
@@ -599,12 +599,12 @@ RectTransform:
   - {fileID: 1523044773}
   - {fileID: 2093220961}
   - {fileID: 1686979760}
-  - {fileID: 844357451}
   - {fileID: 1178545777}
   - {fileID: 1203849252}
   - {fileID: 572138377}
   - {fileID: 289735551}
   - {fileID: 873045550}
+  - {fileID: 844357451}
   m_Father: {fileID: 1311656476}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -663,7 +663,7 @@ GameObject:
   - component: {fileID: 452230876}
   - component: {fileID: 452230875}
   m_Layer: 5
-  m_Name: You Have 1000 Diamonds (1)
+  m_Name: sitare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1050,7 +1050,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844357450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1062,8 +1062,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.2, y: -67.6}
-  m_SizeDelta: {x: 242.701, y: 34.595}
+  m_AnchoredPosition: {x: 13.200012, y: -67.59993}
+  m_SizeDelta: {x: 286.349, y: 59.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844357452
 MonoBehaviour:
@@ -1310,7 +1310,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 873045552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967816816}
+        m_TargetAssemblyTypeName: carholder, Assembly-CSharp
+        m_MethodName: closePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &873045552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1587,8 +1599,11 @@ MonoBehaviour:
   NextBtn: {fileID: 53300114}
   UseBtn: {fileID: 2010393714}
   buyPanel: {fileID: 290064720}
-  haveStarText: {fileID: 619548070}
+  haveStarText: {fileID: 452230875}
   haveDiamondText: {fileID: 619548070}
+  needmorepaisa: {fileID: 1317138313}
+  BuyCarBtn: {fileID: 844357452}
+  closePanelBtn: {fileID: 873045551}
 --- !u!1 &1178545776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -173, y: -349}
+  m_AnchoredPosition: {x: -173.2, y: -349}
   m_SizeDelta: {x: -290.969, y: -913.214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178545778
@@ -1810,7 +1825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194.27, y: -408.53}
+  m_AnchoredPosition: {x: -183, y: -408.53}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203849253
@@ -2268,7 +2283,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: aa6746c92c3643147881b0ac66f4d5b1, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -2349,7 +2364,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: aa6746c92c3643147881b0ac66f4d5b1, type: 3}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2635,6 +2650,69 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1615668414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615668415}
+  - component: {fileID: 1615668417}
+  - component: {fileID: 1615668416}
+  m_Layer: 0
+  m_Name: unityad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615668415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615668414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 81.10584, y: 253.73523, z: -127.99323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1615668416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615668414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 750eae6e50383114ab52b1a15b589bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 5331191
+  _iOSGameId: 5331190
+  _testMode: 1
+--- !u!114 &1615668417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615668414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b583fad0cc087a748a69db79d44ca025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showAdButton: {fileID: 289735552}
+  _androidAdUnitId: Rewarded_Android
+  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &1670080836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,8 +2991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -96.4, y: 0}
-  m_SizeDelta: {x: 47.163, y: 28.785}
+  m_AnchoredPosition: {x: -116.15, y: 1.8}
+  m_SizeDelta: {x: 54.055, y: 37.974}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1802386870
 MonoBehaviour:

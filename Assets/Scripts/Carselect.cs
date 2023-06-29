@@ -17,16 +17,19 @@ public class carholder : MonoBehaviour
     Color greenColor = new Color(0.5f, 1f, 0.4f, 1f);
 
     int haveStars, haveDiamonds;
-    int carValue;
+    int carValue = 700;
 
     [Header("Buy Panel")]
     public Text haveStarText;
     public Text haveDiamondText;
+    public Text needmorepaisa;
+    public Button BuyCarBtn;
+    public Button closePanelBtn;
+
 
     private void Awake()
     {
         ChangeCar(0);
-
     }
 
     private void Start()
@@ -81,14 +84,30 @@ public class carholder : MonoBehaviour
         {
             buyPanel.SetActive(true);
 
-            haveStarText.text = "You Have" + haveStars + "Stars";
-            haveDiamondText.text = "You Have" +   haveDiamonds    + "Diamonds";
+            haveStarText.text = "You Have " + haveStars + " Stars";
+            haveDiamondText.text = "You Have " +   haveDiamonds    + " Diamonds";
+
+            if (haveStars < carValue)
+            {
+                int needstarint = carValue - haveStars;
+                BuyCarBtn.interactable = false;
+                needmorepaisa.text = needstarint + " More Star Needed";
+
+            }
 
 
             PrevBtn.interactable = false;
             NextBtn.interactable = false;
             UseBtn.interactable = false;
         }
+    }
+
+    public void closePanel()
+    {
+        buyPanel.SetActive(false);
+        PrevBtn.interactable = true;
+        NextBtn.interactable = true;
+        UseBtn.interactable = true;
     }
 
     public void buystars()

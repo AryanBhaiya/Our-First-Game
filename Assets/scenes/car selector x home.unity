@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.79544014, g: 0.7545813, b: 0.6918735, a: 1}
+  m_IndirectSpecularColor: {r: 0.5240616, g: 0.48573893, b: 0.41709602, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -581,7 +581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &290064721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1599,6 +1599,21 @@ MonoBehaviour:
   NextBtn: {fileID: 53300114}
   UseBtn: {fileID: 2010393714}
   buyPanel: {fileID: 290064720}
+  currentCar: 0
+  ownCarIndex: 
+  redColor:
+    r: 1
+    g: 0.1
+    b: 0.1
+    a: 1
+  greenColor:
+    r: 0.5
+    g: 1
+    b: 0.4
+    a: 1
+  haveStars: 0
+  haveDiamonds: 0
+  carValue: 700
   haveStarText: {fileID: 452230875}
   haveDiamondText: {fileID: 619548070}
   needmorepaisa: {fileID: 1317138313}

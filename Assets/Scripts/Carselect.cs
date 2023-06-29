@@ -25,10 +25,15 @@ public class carholder : MonoBehaviour
     public Text needmorepaisa;
     public Button BuyCarBtn;
     public Button closePanelBtn;
+    public Button buysStar_diamond_btn;
 
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
         ChangeCar(0);
     }
 
@@ -51,7 +56,7 @@ public class carholder : MonoBehaviour
             }
             transform.GetChild(i).gameObject.SetActive(i == _index);
         }
-        
+
     }
 
     public void ChangeCar(int _change)
@@ -60,7 +65,7 @@ public class carholder : MonoBehaviour
         ChooseCar(currentCar);
 
         ownCarIndex = "CarNo" + currentCar;
-        if(PlayerPrefs.GetInt(ownCarIndex) == 1)
+        if (PlayerPrefs.GetInt(ownCarIndex) == 1)
         {
             UseBtn.GetComponent<Image>().color = greenColor;
             UseBtn.GetComponentInChildren<Text>().text = "Select";
@@ -75,7 +80,7 @@ public class carholder : MonoBehaviour
 
     public void UseBtnClick()
     {
-        if(PlayerPrefs.GetInt(ownCarIndex) == 1)
+        if (PlayerPrefs.GetInt(ownCarIndex) == 1)
         {
             PlayerPrefs.SetInt("SelectCar", currentCar);
             SceneManager.LoadScene("level");
@@ -85,7 +90,7 @@ public class carholder : MonoBehaviour
             buyPanel.SetActive(true);
 
             haveStarText.text = "You Have " + haveStars + " Stars";
-            haveDiamondText.text = "You Have " +   haveDiamonds    + " Diamonds";
+            haveDiamondText.text = "You Have " + haveDiamonds + " Diamonds";
 
             if (haveStars < carValue)
             {
@@ -121,8 +126,42 @@ public class carholder : MonoBehaviour
 
     public void EarnStar()
     {
-        haveStars = PlayerPrefs.GetInt("totalStar");
         haveStars += 100;
-        PlayerPrefs.SetInnt("totalStar", haveStars);
+        PlayerPrefs.SetInt("totalStar", haveStars);
+        SetText();
+    }
+
+    void SetText()
+    {
+        buyPanel.SetActive(true);
+
+        haveStarText.text = "You Have " + haveStars + " Stars";
+        haveDiamondText.text = "You Have " + haveDiamonds + " Diamonds";
+
+        if (haveStars < carValue)
+        {
+            int needstarint = carValue - haveStars;
+            BuyCarBtn.interactable = false;
+            needmorepaisa.text = needstarint + " More Star Needed";
+
+        }
+        if (haveDiamonds < 1)
+        {
+            buysStar_diamond_btn.interactable = false;
+        }
+        PrevBtn.interactable = false;
+        NextBtn.interactable = false;
+        UseBtn.interactable = false;
+    }
+
+
+    public void BuyThisCar()
+    {
+        PlayerPrefs.SetInt(ownCarIndex, 1);
+        haveStars += -carValue;
+        PlayerPrefs.SetInt("totalStar", haveStars);
+        int currentMinOne = currentMinOne - 1;
+        ChangeCar(currentMinOne);
+        closePanel();
     }
 }

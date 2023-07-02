@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     int bestScore, totalDiamond, totalStar;
     bool countScore;
 
+    [Header("ForPlayer")]
+    public GameObject[] player;
+
 
     private void Awake()
     {

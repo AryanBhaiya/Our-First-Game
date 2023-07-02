@@ -62,6 +62,9 @@ public class UnityAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListen
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
+            carholderscript.instance.EarnStar();
+            //load another ad
+            Advertisement.Load(_adUnitId, this);
         }
     }
 

@@ -272,7 +272,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967816816}
-        m_TargetAssemblyTypeName: carholder, Assembly-CSharp
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
         m_MethodName: ChangeCar
         m_Mode: 3
         m_Arguments:
@@ -581,7 +581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &290064721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967816816}
-        m_TargetAssemblyTypeName: carholder, Assembly-CSharp
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
         m_MethodName: ChangeCar
         m_Mode: 3
         m_Arguments:
@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 572138379}
   - component: {fileID: 572138378}
   m_Layer: 5
-  m_Name: Text (Legacy) (1)
+  m_Name: video text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -935,7 +935,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100 Stars For 1 Video
+  m_Text: 50 Stars For 1 Video
 --- !u!222 &572138379
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1062,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.200012, y: -67.59993}
+  m_AnchoredPosition: {x: 13, y: -67.59993}
   m_SizeDelta: {x: 286.349, y: 59.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &844357452
@@ -1108,7 +1108,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 844357453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967816816}
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
+        m_MethodName: BuyThisCar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &844357453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,7 +1252,7 @@ GameObject:
   - component: {fileID: 873045552}
   - component: {fileID: 873045551}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1312,7 +1324,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967816816}
-        m_TargetAssemblyTypeName: carholder, Assembly-CSharp
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
         m_MethodName: closePanel
         m_Mode: 1
         m_Arguments:
@@ -1391,11 +1403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.5
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1431,7 +1443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1592,33 +1604,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 967816814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f87ce94e9ab2ac94789b0ac628034b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 472ec640b1bdd754981c1f31bda9372c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PrevBtn: {fileID: 544572811}
   NextBtn: {fileID: 53300114}
   UseBtn: {fileID: 2010393714}
   buyPanel: {fileID: 290064720}
-  currentCar: 0
-  ownCarIndex: 
-  redColor:
-    r: 1
-    g: 0.1
-    b: 0.1
-    a: 1
-  greenColor:
-    r: 0.5
-    g: 1
-    b: 0.4
-    a: 1
-  haveStars: 0
-  haveDiamonds: 0
-  carValue: 700
   haveStarText: {fileID: 452230875}
   haveDiamondText: {fileID: 619548070}
   needmorepaisa: {fileID: 1317138313}
   BuyCarBtn: {fileID: 844357452}
   closePanelBtn: {fileID: 873045551}
+  buysStar_diamond_btn: {fileID: 1203849253}
 --- !u!1 &1178545776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,7 +1629,7 @@ GameObject:
   - component: {fileID: 1178545779}
   - component: {fileID: 1178545778}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: diamond to star text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,11 +1727,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.4
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1769,7 +1767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 64eaa361dd951ad44b88bdd70823d963, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1816,7 +1814,7 @@ GameObject:
   - component: {fileID: 1203849254}
   - component: {fileID: 1203849253}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: diamond to stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,7 +1884,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1203849254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 967816816}
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
+        m_MethodName: buystars
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1203849254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,11 +1965,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24d21c5cf9208c543bd85126192e33ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.5
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24d21c5cf9208c543bd85126192e33ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24d21c5cf9208c543bd85126192e33ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1995,7 +2005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24d21c5cf9208c543bd85126192e33ed, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2059,11 +2069,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6dc10478af126c548ab92dc709618527, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.1
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6dc10478af126c548ab92dc709618527, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6dc10478af126c548ab92dc709618527, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2099,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6dc10478af126c548ab92dc709618527, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2820,7 +2830,7 @@ GameObject:
   - component: {fileID: 1686979762}
   - component: {fileID: 1686979761}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2915,11 +2925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9d1db90fd363ff4cbe9c9cc9d695439, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.4
+      value: 1.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9d1db90fd363ff4cbe9c9cc9d695439, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f9d1db90fd363ff4cbe9c9cc9d695439, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2955,7 +2965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f9d1db90fd363ff4cbe9c9cc9d695439, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3132,7 +3142,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 967816816}
-        m_TargetAssemblyTypeName: carholder, Assembly-CSharp
+        m_TargetAssemblyTypeName: carholderscript, Assembly-CSharp
         m_MethodName: UseBtnClick
         m_Mode: 1
         m_Arguments:
@@ -3273,7 +3283,7 @@ GameObject:
   - component: {fileID: 2093220963}
   - component: {fileID: 2093220962}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3524,11 +3534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eba77cdee1aa10442ad623acedc3c877, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -21.1
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eba77cdee1aa10442ad623acedc3c877, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.3
+      value: -12.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: eba77cdee1aa10442ad623acedc3c877, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3564,7 +3574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: eba77cdee1aa10442ad623acedc3c877, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

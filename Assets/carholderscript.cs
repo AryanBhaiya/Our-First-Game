@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class carholder : MonoBehaviour
+public class carholderscript : MonoBehaviour
 {
+    public static carholderscript instance;
     [SerializeField] Button PrevBtn;
     [SerializeField] Button NextBtn;
     [SerializeField] Button UseBtn;
@@ -27,15 +28,15 @@ public class carholder : MonoBehaviour
     public Button closePanelBtn;
     public Button buysStar_diamond_btn;
 
-
     private void Awake()
     {
-        if (instance == null)
+        if(instance == null)
         {
             instance = this;
         }
         ChangeCar(0);
     }
+
 
     private void Start()
     {
@@ -97,10 +98,16 @@ public class carholder : MonoBehaviour
                 int needstarint = carValue - haveStars;
                 BuyCarBtn.interactable = false;
                 needmorepaisa.text = needstarint + " More Star Needed";
-
             }
-
-
+            else
+            {
+                BuyCarBtn.interactable = true;
+                needmorepaisa.text = "Value: " + carValue + " Stars";
+            }
+            if(haveDiamonds<1)
+            {
+                buysStar_diamond_btn.interactable = false;
+            }
             PrevBtn.interactable = false;
             NextBtn.interactable = false;
             UseBtn.interactable = false;
@@ -118,7 +125,7 @@ public class carholder : MonoBehaviour
     public void buystars()
     {
         haveDiamonds += -1;
-        haveStars += -10;
+        haveStars += 10;
         PlayerPrefs.SetInt("totalStar", haveStars);
         PlayerPrefs.SetInt("totalDiamond", haveDiamonds);
         SetText();
@@ -126,7 +133,7 @@ public class carholder : MonoBehaviour
 
     public void EarnStar()
     {
-        haveStars += 100;
+        haveStars += 50;
         PlayerPrefs.SetInt("totalStar", haveStars);
         SetText();
     }
@@ -160,7 +167,7 @@ public class carholder : MonoBehaviour
         PlayerPrefs.SetInt(ownCarIndex, 1);
         haveStars += -carValue;
         PlayerPrefs.SetInt("totalStar", haveStars);
-        int currentMinOne = currentMinOne - 1;
+        int currentMinOne = currentCar - 1;
         ChangeCar(currentMinOne);
         closePanel();
     }

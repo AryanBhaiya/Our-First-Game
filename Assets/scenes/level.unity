@@ -577,13 +577,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 688049345092657893, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6922256137470967947, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
       propertyPath: m_Name
       value: Super Police Car Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6922256137470967947, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7735807453631732273, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
       propertyPath: m_RootOrder
@@ -641,10 +645,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9172260968276277430, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6922256137470967947, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1158026370}
   m_SourcePrefab: {fileID: 100100000, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
 --- !u!1 &491410296
 GameObject:
@@ -1779,6 +1790,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104604130}
   m_CullTransparentMesh: 1
+--- !u!1 &1158026365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6922256137470967947, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
+  m_PrefabInstance: {fileID: 486023315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1158026369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7735807453631732273, guid: 53f6055f4db6d2945afba977e07e3621, type: 3}
+  m_PrefabInstance: {fileID: 486023315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1158026370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158026365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca6550406784fd459b548665d91dc4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1158026369}
+  followSpeed: 8
+  lerpTime: 0.372
+  myColors:
+  - {r: 0.6698113, g: 0.041073352, b: 0.041073352, a: 0}
+  - {r: 0.9433962, g: 0.94048476, b: 0.12904951, a: 0}
+  - {r: 0.16232683, g: 0.7735849, b: 0.09852261, a: 0}
 --- !u!1 &1274946983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,6 +2788,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
       propertyPath: m_Name
       value: Sports Racing Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

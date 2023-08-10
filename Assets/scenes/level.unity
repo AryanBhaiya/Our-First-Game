@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca6550406784fd459b548665d91dc4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2084998657}
+  target: {fileID: 1158026369}
   followSpeed: 9
   lerpTime: 0.275
   myColors:
@@ -2874,8 +2874,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!4 &2084998657 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4764f71eddbb8fe4c8ebb0aa56af0952, type: 3}
-  m_PrefabInstance: {fileID: 2084998652}
-  m_PrefabAsset: {fileID: 0}
